@@ -1,0 +1,13 @@
+# include <stdio.h>
+int main()
+{
+    int english = 85, math = 90, science = 95,hindi = 80,art = 70, total, percentage;
+
+    total = english + math + science + hindi + art;
+    percentage = (total / 5);
+
+    printf("Total = %d\n", total);
+    printf("Percentage = %d\n", percentage);
+
+    return 0;
+}
