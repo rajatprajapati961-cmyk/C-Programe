@@ -1,0 +1,41 @@
+# include <stdio.h>
+int main(void)
+{ 
+    // it is a simple student management program that collects and displays student information such as name, roll number, age, marks, total marks, percentage, pass/fail status, grade, attendance, and course completion status.
+    int Name = 'R';
+    int roll_no = 12345;
+    int age = 20;
+    int marks = 85;
+    int total_marks = 100;
+    int percentage = (marks * 100) / total_marks;
+    int pass_fail = (percentage >= 40) ? 1 : 0;
+    char grade;
+    int attendance = 90;
+    int course_completed = 1;
+
+    printf("Name: %c\n", Name);
+    printf("roll_no: %d\n", roll_no);
+    printf("Age: %d\n", age);
+    printf("Marks: %d\n", marks);
+    printf("Total Marks: %d\n", total_marks);
+    printf("Percentage: %d%%\n", percentage);
+    printf("Pass/Fail: %s\n", pass_fail ? "Pass" : "Fail");
+    
+    if (percentage >= 90)
+        grade = 'A';
+    else if (percentage >= 80)
+        grade = 'B';
+    else if (percentage >= 70)
+        grade = 'C';
+    else if (percentage >= 60)
+        grade = 'D';
+    else
+        grade = 'F';
+
+    printf("Grade: %c\n", grade);
+    printf("Attendance: %d%%\n", attendance);
+    printf("Course Completed: %s\n", course_completed ? "Yes" : "No");
+
+    return 0;
+}
+
