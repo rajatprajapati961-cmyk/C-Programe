@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void)
+{
+    float Height = 5.1f;
+    int age = 20;
+    char name = 'R';
+
+    printf("Height: %f\n", Height);
+    printf("Age: %d\n", age);
+    printf("Name: %c\n", name);
+
+    return 0;
+}
+
