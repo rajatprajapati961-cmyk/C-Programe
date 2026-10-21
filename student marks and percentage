@@ -1,0 +1,20 @@
+# include <stdio.h>
+
+int calcprecntage(int sceince, int maths, int english);
+
+int main()
+{
+    int sceince = 33;
+    int maths = 45;
+    int english = 20;
+    
+    printf("Percentage: %d\n", calcprecntage (sceince, maths, english));
+    return 0;
+}
+
+int calcprecntage(int sceince, int maths, int english)
+{
+    int total = sceince + maths + english;
+    int percentage = (total / 3);
+    return percentage;
+}
