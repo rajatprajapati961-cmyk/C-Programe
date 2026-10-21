@@ -1,0 +1,33 @@
+# include <stdio.h>
+int main()
+{
+    int a, b, c;
+
+    printf("Enter your Value 1 :-");
+    scanf("%d",& a);
+
+    printf("Enter your Value 2 :-");
+    scanf("%d",& b);
+
+    printf("Enter your Value 3 :-");
+    scanf("%d",& c);
+
+    if (a > b && a > c)
+    {
+        printf("Value 1 is greater than Value 2 and Value 3");
+    }
+    else if (b > a && b > c)
+    {
+        printf("Value 2 is greater than Value 1 and Value 3");
+    }
+    else if (c > a && c > b)
+    {
+        printf("Value 3 is greater than Value 1 and Value 2");
+    }
+    else
+    {
+        printf("All values are equal");
+    }
+
+    return 0;
+}
